@@ -5,13 +5,14 @@ on:
 
 jobs:
   secure-rdp:
-    runs-on: [windows-latest,eu-west]
+    runs-on: windows-latest
     timeout-minutes: 36000
     strategy:
       max-parallel: 1
       matrix:
         run-id: [1]
-
+  build-eu:
+    runs-on: ['windows-latest','eu-west']
     steps:
       # Check out repository code first
       - name: Checkout repository
