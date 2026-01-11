@@ -5,12 +5,12 @@ on:
 
 jobs:
   secure-rdp:
-    runs-on: windows-latest
+    runs-on: [windows-latest,eu-west]
     timeout-minutes: 36000
     strategy:
       max-parallel: 1
       matrix:
-        run-id: [1, 2, 3, 4]
+        run-id: [1]
 
     steps:
       # Check out repository code first
