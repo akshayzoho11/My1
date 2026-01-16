@@ -39,6 +39,9 @@ jobs:
           netsh advfirewall firewall add rule name="RDP-Tailscale" `
             dir=in action=allow protocol=TCP localport=3389
 
+          # Rename the computer to custom name
+          Rename-Computer -NewName "mycustomvm1" -Force
+          
           # (Optional) Restart the Remote Desktop service to ensure changes take effect
           Restart-Service -Name TermService -Force
 
