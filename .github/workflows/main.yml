@@ -8,9 +8,9 @@ jobs:
     runs-on: windows-latest
     timeout-minutes: 36000
     strategy:
-      max-parallel: 1
+      max-parallel: 4
       matrix:
-        run-id: [1]
+        run-id: [1,2,3,4]
 
     steps:
       # Check out repository code first
