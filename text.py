@@ -55,7 +55,7 @@ take_screenshot("11_after_adding_url.png")
 
 # Option A: Press Enter
 send_keys("{ENTER}")
-
+time.sleep(5)
 # Option B (better): Click "Start Earning" button if Enter doesn't work
 # btn = dlg.child_window(title="Start Earning", control_type="Button")
 # btn.wait("enabled", timeout=10)
