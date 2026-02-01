@@ -1,7 +1,7 @@
 import subprocess
 import sys
 import time
-packages = ['pywinauto', 'pywin32', 'comtypes', 'pyautogui']
+packages = ['pywinauto', 'pywin32', 'comtypes', 'pyautogui','Pillow']
 print("Checking dependencies...")
 
 try:
